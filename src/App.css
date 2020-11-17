@@ -1,0 +1,552 @@
+
+html,body
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgb(61, 61, 61);
+}
+main, .App, #root
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(83, 65, 98); 
+    display: flex; 
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.user-profile
+{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin-right: 20px;
+    color: white;
+    background-color: rgb(117, 92, 139);
+    padding-right: 20px;
+}
+.channels-link:hover, .pc_btn:hover
+{
+    background-color: rgb(117, 92, 139);
+}
+
+.pc_btn
+{
+    padding: 0;
+    width: 100%;
+    height:100%;
+    padding-left: 10px;
+    padding-right: 10px;    
+    border:none;
+    color: #fff;
+    background-color:transparent;
+}
+.friend-request-btn img
+{
+    margin-top: 10px;
+    width: 20px;
+}
+.friend-request-btn
+{
+    width: 32px !important;
+
+    border: none;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.token
+{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+.interface-container
+{
+    
+    display: flex;
+    height: 100%;
+    margin-top: 50px;
+    
+}
+.side-bar
+{
+    background-color: rgb(29, 19, 37);
+    
+    width: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#expand-toggle-btn, #logout-btn
+{
+    background-color:transparent;
+    border:none;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin-top: auto;
+    margin-left:10px;
+    margin-bottom: auto;
+}
+#expand-toggle-btn img
+{
+    width: inherit;
+    height: inherit;
+    margin: 0px;
+    filter: invert(75%);
+
+}
+#expand-toggle-btn img:hover
+{
+    
+    filter: invert(100%);
+
+}
+#logout-btn img
+{
+    width: inherit;
+    height: inherit;
+    margin: 0px;
+    filter: invert(20%);
+
+}
+#logout-btn img:hover
+{
+    
+    filter: invert(0%);
+
+}
+.pc_display
+{
+    overflow: auto;
+}
+.chat-sessions
+{
+    background-color: rgb(63, 49, 75);
+    position: absolute;
+    overflow: auto;
+    right:0;
+    left: 50px;
+    bottom: 0;
+    top:50px;
+}
+.chat-sessions h2
+{
+    margin: auto;
+    padding:10px;
+    color: #fff;
+
+}
+.hidden
+{
+    display: none;
+    visibility: hidden;
+}
+.chat-header
+{
+    color:#fff;
+    height: 50px;
+    
+}
+.chat-header h3
+{  
+    
+    margin: auto;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.publicChannels_header
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+.publicChannels_header h3
+{
+    margin-left: 10px;
+    color: #fff;
+    margin-right: 10px;
+}
+.publicChannels_header form
+{
+    width: 250px;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-right: 0px;
+}
+.publicChannels_header label
+{
+    color: #fff;
+}
+.publicChannels_header form input
+{
+    width: 25%;
+}
+#addChannel_form
+{
+    color: white;
+    font-weight: bolder;
+    padding: 15px;
+    background-color: rgb(135, 106, 160);
+}
+#channel-bar-content
+{
+    background-color:rgb(68, 55, 80);
+    position: inherit;
+    overflow: auto;
+    top:62px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+.chat-window,.channels-window
+{   
+    background-color:rgb(63, 49, 75);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 50px;
+    top: 50px;
+    
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-display
+{
+    position: absolute;
+    top: 50px;
+    bottom: 80px;
+    right: 0;
+    left: 0;
+    
+    overflow: auto;
+    
+}
+.chat-form
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+   
+    margin-top: auto;
+    border-radius: 10px;
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+    background-color: rgb(98, 77, 122);
+    display: flex;
+    
+}
+a{
+  text-decoration: none;
+}
+.chat-text
+{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 2px;
+    background-color: rgb(88, 74, 100);
+    border:none;
+    height: 20px;
+    color:#fff;
+}
+.send-btn
+{
+    background-color: transparent;
+    margin: 10px;
+    margin-left: 0px;
+    border: none;
+
+}
+.send-btn img
+{
+    width: 30px;
+    filter: invert(100%);
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.mini-dp
+{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(195, 195, 195);
+    border-radius: 100%;
+    border: solid black 2px;
+    margin: auto 2px auto 2px; 
+}
+.med-dp
+{
+    width: 32px;
+    height: 32px;
+    
+    background-color: rgb(195, 195, 195);
+    border-radius: 100%;
+    border: solid black 2px;
+    margin: auto 2px auto 10px; 
+}
+.session
+{
+    background-color: rgb(83, 65, 98);
+    margin-bottom: 1px;
+    text-align: left;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.session:hover
+{
+    background-color: rgb(103, 81, 121);
+   
+    
+    
+}
+.session-btn
+{
+    color: white;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    border:none;
+}
+
+.close-btn
+{
+    background-color: transparent;
+    border: none;
+}
+.close-btn img
+{
+    width: 30px;
+}
+.session-btn img
+{
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(0, 0, 0);
+    border:2px solid black;
+    border-radius: 100%;
+    
+}
+
+.selected
+{
+    background-color: rgb(117, 92, 139);
+}
+
+.session p
+{
+    margin: 0px;
+    padding: 10px;
+}
+.message
+{
+    color: white;
+    background-color: rgb(83, 65, 98);
+    display: flex;
+    flex-direction: row;
+    margin-bottom:2px;
+    width: 99.5%;
+    
+    
+}
+.user-message
+{
+    color: white;
+    background-color: rgb(117, 92, 139);
+}
+.public_channel_btn
+{
+    width: 100%;
+    background-color: rgb(83, 65, 98);
+    display: flex;
+    flex-direction: row;
+    margin-top: 1px;
+}
+.public_channel_btn:hover
+{
+    background-color:rgb(108, 85, 128);
+}
+.public_channel_btn img
+{
+    background-color:rgb(0, 0, 0);
+}
+.public_channel_btn button
+{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border:none;
+    width: 100%;
+    color: white;
+    
+    
+    margin-bottom: 1px;
+}
+.date
+{
+    color: rgb(255, 255, 255);
+}
+
+
+.intro
+{
+    color: #fff;
+    background-color: rgb(83, 65, 98);
+    margin-top: 50px;
+    padding: 10px;
+    
+    
+    
+}
+.login-container, .signup-container
+{
+    
+    background-color: #664686;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    border:solid rgb(0, 0, 0) 2px;
+    padding: 50px;
+    border-radius: 5px;
+    margin: auto;
+    margin-left: 6px;
+    margin-right: 6px; 
+}
+.login-container a, .signup-container a
+{
+    
+    color: white; 
+    text-decoration: rgb(37, 19, 53) underline;
+}
+.login-container form , .signup-container form
+{
+    
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 80%;
+    padding: 20px;
+}
+.login-container form button, .signup-container form button
+{
+    background-color: rgb(83, 65, 98);
+    color: #fff;
+    border:none;
+    margin-top: 3px;
+    width: 50%;
+}
+header
+{
+    display: flex;
+    position: absolute;
+    top:0px;
+    width: 100%;
+    padding: 0px;
+    height: 50px;
+    justify-content: space-between;
+    background-color: rgb(29, 19, 37);
+}
+header h1
+{
+    margin: 0;
+    padding: 3px;
+    padding-left: 10px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#fff;
+    
+}
+footer
+{
+    position: absolute;
+    bottom: 0;
+   
+    background-color: rgb(29, 19, 37);;
+    text-align: center;
+    
+    width: 100%;
+    
+    
+    color: #fff;
+}
+.start_btn
+{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 32px;
+    padding: 20px;
+    font-style: oblique;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+
+}
+.start_btn:hover
+{
+    
+    padding: 21px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+@media only screen and (min-width: 500px)
+{
+  .chat-sessions
+  {
+      
+      position: absolute;
+      width:250px;
+      left: 50px;
+      bottom: 0;
+      top:50px;
+  }
+  .chat-window
+  {   
+      background-color:rgb(47, 35, 56);;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      top: 50px;
+      
+      
+      display: flex;
+      flex-direction: column;
+  }
+    .login-container,.signup-container
+    {
+        margin: auto;
+        width: 300px;
+        font-weight: bolder;
+    }
+
+}

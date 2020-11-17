@@ -10,7 +10,7 @@ Mewtable is a basic chat application where users can create public channels and 
 ## How To Use:
 
 #### Landing page
- ![landing](/screenshots/landing.PNG)
+ ![landing](/screenshots/landing.png)
 
 #### Register 
  ![register](/screenshots/sign-up.png)
@@ -21,7 +21,7 @@ Mewtable is a basic chat application where users can create public channels and 
     email: demo@demo.com
     Password: password
   ```
-  ![login](/screenshots/login.PNG)
+  ![login](/screenshots/login.png)
 
 #### Interface 
   ![chat](/screenshots/chat.png)
